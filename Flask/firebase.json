@@ -1,0 +1,15 @@
+{
+"hosting" : {
+  "public": "static",
+  "ignore" :[
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+  "rewrites" : [{
+    "source": "**",
+    "run" : {
+      "serviceId": "python-travel-app-flask"
+    }
+    }]
+  }}
