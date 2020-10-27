@@ -20,9 +20,27 @@ In the Photo Gallery tab, one can search for photos of any place in the United S
 
 ## How to run the website on your local machine
 
-First you would need to clone this repository or download the files. 
+1. You would need to clone this repository or download the files. 
 
-The bert_qa.joblib file that the cdqa model uses also needs to be downloaded online. You would need to put the downloaded model in the model folder in the Flask/server/src/models directory.
+2. The bert_qa.joblib file that the cdqa model uses also needs to be downloaded online. You would need to put the downloaded model in the model folder in the Flask/server/src/models directory. You can download the bert_qa.joblib file here - https://github.com/cdqa-suite/cdQA/releases/tag/bert_qa
 
-You can download the bert_qa
+3. You would need to have Python 3.7 and Angular downloaded. If you do not have Angular downloaded, you can download Angular by 
+    a) Downloading node.js : https://nodejs.org/en/
+    b) Downloading the Angular CLI with : npm install -g @angular/cli
+    c) Running ng version to see that Angular has been installed. 
+
+4. In a terminal, you can set up a virtual environment to run the Flask backend. You would need to install all the dependencies in the reqs.txt file in Flask/server path. You can use pip to do so. ( pip install -r reqs.txt ) 
+
+5. Since the dependencies for the front-end (node_modules) are not included in this repository, you need to create your own Angular application first and then replace the src files with the src files in this respository. 
+
+5. Run your Flask backend in a terminal by going into the Flask/server/src directory and running the command : python app.py 
+
+6. In another terminal, you can start the Angular frontend by going into the travel app directory and running the command : ng serve
+
+7. You can view the application at localhost:4200 (default). 
+
+
+    
+
+
 
